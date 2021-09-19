@@ -28,7 +28,8 @@ lookup   :   向上看（镜头向上偏转，用鼠标上移实现，上移距�
 lookdown :   向下看
 lookleft :   向左看
 lookright:   向右看
-click    :   点按鼠标（按下时间待定，需要考虑优先级，如click时不允许其他指令）
+mine     :   点按鼠标左键（按下时间待定，需要考虑优先级，如click时不允许其他指令）
+place    :   点击鼠标右键
 Drop     :   丢出物品（可设计为氪金操作，如粉丝牌等级>n才可以，否则无效）
 1-8      :   切换物品（可设计为氪金操作）
 
@@ -39,8 +40,17 @@ Drop     :   丢出物品（可设计为氪金操作，如粉丝牌等级>n才�
 在超平坦领地条件下，开放部分权限。
 可以与玩家同屏出现，记得ban了PVP（避免被围殴）
 先实现出来再想也不急 =。=
-
+##### 6、更多设想
+两个共享steve进行决斗，决斗胜利的一方直播间送出奖励
+玩家操控共享steve进行建造目标 完成建造目标直播间送出奖励（今日目标：建一个地狱门/建一个铁傀儡）
+关于物品制作，可以不用动用工作台等复杂方式，配合命令方块或op指令，进行生成（弹幕输入制作钻石剑命令->解析->使用指令give a sword放到手上）
 ----
 可能会用到的东西
 https://github.com/Tsuk1ko/bilibili-live-chat  弹幕姬
 https://github.com/octalmage/robotjs           robot.js
+https://github.com/SocialSisterYi/bilibili-API-collect/blob/master/user/info.md
+根据uid 反查用户粉丝牌信息
+api：http://api.bilibili.com/x/space/acc/info?mid=xxx
+data.fans_medal.medal.medal_name  粉丝牌名称
+data.fans_medal.medal.medal_level 粉丝牌等级
+（方便后期氪金操作）
