@@ -1,8 +1,10 @@
 {
   "dependencies": {
+    "@nut-tree/nut-js": "^1.7.0",
     "node-fetch": "^2.6.1",
     "request": "^2.88.2",
     "request-promise-native": "^1.0.9",
+    "robotjs": "^0.6.0",
     "ws": "^7.4.4"
   }
 }

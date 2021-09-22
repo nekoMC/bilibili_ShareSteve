@@ -3,7 +3,7 @@ const dmParse = (data)=>{
     let {uid,uname,text} = data;
     if(text !=""){
         let reg_move = /^[WASDwasd]{1}$/;
-        let reg_mouse = /^(mine|place|drop|jump|lookup|lookdown|lookleft|lookright)$/;
+        let reg_mouse = /^(mine|place|drop|jump|lookup|lookdown|lookleft|lookright|change[1-8]|stoppp)$/;
           if (!reg_mouse.test(text)&&!reg_move.test(text)){
            console.log("指令格式有误");
                    return false;
